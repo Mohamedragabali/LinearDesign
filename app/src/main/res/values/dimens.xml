@@ -3,6 +3,7 @@
     <dimen name="largNameSize">16sp</dimen>
     <dimen name="smalNameSize">12sp</dimen>
 
+    <dimen name="padding16">16dp</dimen>
     <dimen name="padding12">12dp</dimen>
     <dimen name="padding8">8dp</dimen>
     <dimen name="padding4">4dp</dimen>
