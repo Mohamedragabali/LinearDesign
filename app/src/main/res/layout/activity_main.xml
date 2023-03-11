@@ -10,13 +10,118 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/padding16"
         android:backgroundTint="@color/darkwhite"
-        android:background="@drawable/cardronded">
+        android:background="@drawable/cardronded"
+        android:paddingVertical="@dimen/padding12"
+        android:paddingStart="@dimen/padding12">
+
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/padding12"
             android:src="@drawable/person"
-            app:shapeAppearanceOverlay="@style/makeCornerPhoto"
-            android:layout_margin="@dimen/padding12"/>
+            app:shapeAppearanceOverlay="@style/makeCornerPhoto" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/padding8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namePerson"
+                    android:fontFamily="@font/dm_sans_bold"
+                    android:textSize="@dimen/largNameSize"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_text"
+                    android:fontFamily="@font/dm_sans"
+                    android:paddingHorizontal="@dimen/padding8"
+                    android:paddingVertical="@dimen/padding4"
+                    android:text="@string/avaliableTime"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/smalNameSize" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/job"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/darkBlue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nationality"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/darkBlue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeWorkIn"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/lightBlue"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timeWorkHere"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/lightBlue"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numberReviews"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="@dimen/smalNameSize"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
