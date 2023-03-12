@@ -15,8 +15,9 @@
         android:paddingStart="@dimen/padding12">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
             android:layout_marginEnd="@dimen/padding12"
             android:src="@drawable/person"
             app:shapeAppearanceOverlay="@style/makeCornerPhoto" />
@@ -24,7 +25,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginEnd="@dimen/padding8">
 
@@ -40,7 +41,8 @@
                     android:fontFamily="@font/dm_sans_bold"
                     android:textSize="@dimen/largNameSize"
                     android:textColor="@color/black"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/padding4"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -66,7 +68,8 @@
                     android:text="@string/job"
                     android:fontFamily="@font/dm_sans_medium"
                     android:textSize="@dimen/smalNameSize"
-                    android:textColor="@color/darkBlue"/>
+                    android:textColor="@color/darkBlue"
+                    android:layout_marginEnd="@dimen/padding4"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +83,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding8">
+                android:paddingBottom="@dimen/padding4">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,7 +93,8 @@
                     android:textSize="@dimen/smalNameSize"
                     android:textColor="@color/lightBlue"
                     android:layout_weight="1"
-                    />
+                    android:drawableStart="@drawable/baseline_location_on_24"
+                    android:layout_marginEnd="@dimen/padding4"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -98,26 +102,30 @@
                     android:fontFamily="@font/dm_sans"
                     android:textSize="@dimen/smalNameSize"
                     android:textColor="@color/lightBlue"/>
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/numberReviews"
+                    android:layout_marginEnd="@dimen/padding4"
                     android:fontFamily="@font/dm_sans"
-                    android:textSize="@dimen/smalNameSize"
-                    android:textColor="@color/black"/>
+                    android:text="@string/numberReviews"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smalNameSize" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/rate"
                     android:fontFamily="@font/dm_sans"
+                    android:text="@string/rate"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/smalNameSize"
-                    android:textColor="@color/black"/>
+                    android:drawableEnd="@drawable/baseline_star_24"/>
 
             </LinearLayout>
         </LinearLayout>
